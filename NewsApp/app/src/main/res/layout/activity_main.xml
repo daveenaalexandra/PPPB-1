@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_news"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mario" />
+
+            <TextView
+                android:id="@+id/txt_tittle_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Mario Teguh dan Istri Dipolisikan atas Dugaan Penipuan dan Penggelapan Rp5 M"
+                android:textSize="25sp"
+                tools:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_content_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Jakarta, Insertlive - Motivator Mario Teguh dilaporkan ke polisi atas dugaan penipuan dan penggelapan. Mario Teguh dilaporkan sejak Juni lalu karena dituding melakukan penggelapan uang sebesar Rp5 miliar.  ADVERTISEMENT  Pihak kepolisian pun kini tengah mendalami kasus dugaan penipuan dan penggelapan ini.  ADVERTISEMENT   &quot;Memang kami di bulan lalu, tanggal 19 Juni 2023, sudah membuat LP terhadap pada seorang yang berinisial MT dan kemudian LP-nya dengan nomor 3505 yang saat ini tengah didalami oleh rekan-rekan Polda Metro Jaya,&quot; kata Djamaludin Koedoeboen, kuasa hukum pelapor, saat ditemui di Polda Metro Jaya, Kamis (13/7).  &quot;Dugaan penipuan dan penggelapan, kurang lebih Rp5 miliar,&quot; lanjutnya mengutip detikcom.  Baca Juga : Tanggapan Fanni Lauren Eks Puteri Indonesia Soal Tudingan Penipuan   Mario Teguh dilaporkan setelah dinilai tidak menjalankan kerja sama sesuai dengan perjanjian.  Ia dijadikan sebagai brand ambassador oleh sang pelapor. Pelapor pun berharap akan mendapatkan untung besar setelah menjadikan Mario Teguh sebagai BA-nya.  &quot;Rencananya, minggu depan baru klien kami dimintai keterangannya. Ada janji yang bersangkutan untuk meng-up skin care atau bisnis dari klien kami yang pada akhirnya itu tidak dilakukan sehingga klien kami mengalami kerugian cukup besar dan menggelontorkan sejumlah uang kepada yang bersangkutan sejumlah kurang lebih Rp5 miliar,&quot; papar Djamaludin.  arrow_forward_iosBaca selengkapnya Pause   00:26 00:35 01:08 Unmute  Powered by  GliaStudio  &quot;Beliau selaku BA sekaligus juga istrinya. Jadi kita ada dua terlapor di sini. Yang bersangkutan dengan istrinya,&quot; tambahnya.  Mario Teguh disebut telah disomasi sebanyak tiga kali namun tak mendapat tanggapan. Hingga akhirnya pelapor memutuskan untuk membuat laporan polisi.  &quot;Kita sudah mensomasi yang bersangkutan tiga kali, tapi tidak ada tanggapan dari yang bersangkutan. Maka dari itu dengan terpaksa lah kita melakukan LP ini,&quot; kata sang pengacara.  (agn/fik)" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
