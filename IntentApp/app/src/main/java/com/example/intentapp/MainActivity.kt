@@ -46,7 +46,8 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent.createChooser(intent, "Select an app"))
             }
             btnDial.setOnClickListener {
-                val intent = Intent(Intent.ACTION_DIAL)
+                val intent = Intent(Intent.ACTION_DIv
+                        AL)
                 intent.data = Uri.parse("tel:1234567890")
                 startActivity(intent)
             }
