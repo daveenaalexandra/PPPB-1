@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myhomepage"
+    namespace = "com.example.mycourse"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.myhomepage"
+        applicationId = "com.example.mycourse"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -25,9 +25,6 @@ android {
                 "proguard-rules.pro"
             )
         }
-    }
-    buildFeatures {
-        viewBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -48,4 +45,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.google.android.material:material:1.3.1")
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
 }
